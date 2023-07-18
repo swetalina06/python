@@ -1,9 +1,11 @@
-n=int(input())
-flag=False
-for i in range(2,n,1):
-    if n%i==0:
-        flag=True
-if flag:
-    print("not prime")
+a=int(input())
+b=int(input())
+
+if a%3==0:
+    s=a
+elif a%3==1:
+    s=a+2
 else:
-    print("prime")
+    s=a+1
+for i in range(s,b+1,3):
+         print(i)
